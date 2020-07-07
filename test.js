@@ -2,7 +2,7 @@
  * @Author: jlzm
  * @Date: 2020-07-07 14:17:56
  * @LastEditors: jlzm
- * @LastEditTime: 2020-07-07 14:21:20
+ * @LastEditTime: 2020-07-07 14:27:07
  * @FilePath: \leetCode\test.js
  */
 `
@@ -41,4 +41,27 @@ servtype	否	服务类型：（默认 0）
 cardno	是	驾驶证号
 fileno	否	档案编号
 name	否	姓名
+
+
+--------------------
+机动车行驶证核查接口
+http(s)://boot.csgxcf.com/gxdpops/vehicle
+
+参数	必须	说明
+token	是	访问凭证
+servtype	否	服务类型：（默认 0）
+0=数据核查，1=数据核验，2=数据对比
+plateno	是	号牌号码
+fileno	否	档案编号
+name	否	姓名
+
+请求参数示例（JSON格式）：
+
+{
+
+"token" : "W6OeVa_O91UqA0U8VmHpuNE4EK......-kp3LMNqQY4BoDGJw",
+
+"plateno" : "湘XXXACEF"
+
+}
 `
